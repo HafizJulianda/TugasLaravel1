@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 5rem; /* Adjust padding-top to account for fixed navbar */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: #ffd966;
+    border-bottom: 3px solid #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    height: 5rem; /* Set the height of the navbar */
+}
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    max-width: 10px;
+}
+
+.foto {
+    color: #fff; /* Warna teks logo */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width:100% ;
+    max-width: 10px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 40px; /* Sesuaikan tinggi logo sesuai kebutuhan */
+    width: auto; /* Biarkan lebarnya menyesuaikan dengan tinggi yang telah ditetapkan */
+    margin-right: 10px; /* Jarak antara logo dan teks di sebelahnya */
+}
+
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Make navbar-nav take the full height of the navbar */
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+    line-height: 5rem; /* Match the line-height with the navbar height */
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+    color: salmon;
+}
+
+.navbar .profile-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .profile {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    vertical-align: middle; /* Align the profile image vertically in the middle */
+    position: relative;
+    top: -29px; /* Adjust this value to move the image slightly upwards */
+}
+.navbar .logo-gambar {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Make navbar-nav take the full height of the navbar */
+    width: 100%;
+}
+.navbar .logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    vertical-align: middle; /* Align the profile image vertically in the middle */
+    position: relative;
+    top: -29px; /* Adjust this value to move the image slightly upwards */
+}
+.logo-image {
+    height: 50px;
+    width: auto; /* Biarkan lebarnya menyesuaikan dengan tinggi yang telah ditetapkan */
+    margin-right: 10px; /* Jarak antara logo dan teks di sebelahnya */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    width: calc(20% - 20px); /* Sesuaikan lebar untuk tiga kartu dalam satu baris */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.card .product-image {
+    width: 100%; /* Gambar mengisi lebar kartu */
+    height: 250px; /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Menyesuaikan gambar sesuai proporsi aspek tanpa merubahnya */
+    border-radius: 5px 5px 0 0; /* Sudut bulat untuk bagian atas gambar */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.card-actions {
+    margin-top: 10px;
+}
+
+.card-actions a {
+    display: inline-block;
+    margin-right: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+.card-actions a:hover {
+    text-decoration: underline;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0; /* Rounded corners for top of image */
+    object-fit: cover;
+}
+.pencarian input[type="text"]  {
+    padding: 3px;
+    width: 100%;
+    max-width: 300px;
+    font-style: italic;
+    height: 30px;
+    border: 1px solid black;
+
+}
+.pencarian button {
+    width: 100%;
+    max-width: 50px;
+    color: black;
+    background-color: white;
+    margin-right: 100px;
+    position: relative;
+    height: 25px;
+    border: 1px solid black;
+}
+.pencarian {
+    padding-left: 880px;
+    padding-top: 5px;
+}
+.tambah a {
+    width: 100%;
+    max-width: 120px; /* Maksimum lebar tombol */
+    background-color: green;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 2rem; /* Match the line-height with the navbar height */
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+.tambah {
+    padding-left: 1120px;
+    height: 100%;
+    padding-top: 21px;
+
+}
+
+
+

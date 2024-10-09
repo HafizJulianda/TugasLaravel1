@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-top: 5rem; /* Adjust padding-top to account for fixed navbar */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: #ffd966;
+    border-bottom: 3px solid #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 5rem; /* Set the height of the navbar */
+    width: 100%; /* Ensure full width */
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Make navbar-nav take the full height of the navbar */
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 1rem;
+    line-height: 5rem; /* Match the line-height with the navbar height */
+    text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+    color: salmon;
+}
+
+.navbar .profile-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .profile {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    vertical-align: middle; /* Align the profile image vertically in the middle */
+}
+
+.card-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff; /* Optional: Add a background color to distinguish from body */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Adjust margin-top to create space below navbar */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.product-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+button,
+input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
